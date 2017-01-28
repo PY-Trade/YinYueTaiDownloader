@@ -1,6 +1,6 @@
 # YinYueTaiDownloader
 
-YinYueTaiDownloader is a python script to download `.flv` from [http://www.yinyuetai.com/](http://www.yinyuetai.com/) by ID without using the fxxking `Yinyuetai Client`.
+YinYueTaiDownloader is a python script to download `.flv` from [http://www.yinyuetai.com/](http://www.yinyuetai.com/) by ID without using the fxxking `YinYueTai Client`.
 
 ## Overview
 
