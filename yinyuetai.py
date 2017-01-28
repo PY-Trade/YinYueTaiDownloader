@@ -83,6 +83,7 @@ def main():
 	videosrc = handlehtml(url)
 	download(videosrc, path, videoname)
 	print 'Download success!'
+	print 'File path: ' + path + '/' + videoname + '.flv'
 
 if __name__=='__main__':
 		main()
