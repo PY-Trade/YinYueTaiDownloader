@@ -4,7 +4,7 @@ YinYueTaiDownloader is a script to download .flv from [http://www.yinyuetai.com/
 
 ## Overview
 
-![](assets/screenshot.gif)
+![](assets/screenshot.png)
 
 ## Requirements
 
