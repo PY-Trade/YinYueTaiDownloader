@@ -8,6 +8,7 @@ Thumbs.db
 db.json
 *.log
 public/
+FLV/
 .deploy*/
 node_modules/
 
