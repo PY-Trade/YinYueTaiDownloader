@@ -18,7 +18,7 @@ python YinYueTaiDownloader.py
 
 ## PS
 
-Modified from [https://github.com/firstg/yinyuetai](https://github.com/firstg/yinyuetai)
+Modified from [https://github.com/firstg/yinyuetai](https://github.com/firstg/yinyuetai).
 
 1. Fixed problem with finding title of MV from the page content;
 2. Fixed problem with FLV path in OS X.
