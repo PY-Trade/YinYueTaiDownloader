@@ -1,6 +1,6 @@
 # YinYueTaiDownloader
 
-YinYueTaiDownloader is a script to download .flv from [http://www.yinyuetai.com/](http://www.yinyuetai.com/) by ID without the `Yinyuetai Client`.
+YinYueTaiDownloader is a python script to download `.flv` from [http://www.yinyuetai.com/](http://www.yinyuetai.com/) by ID without using the fxxking `Yinyuetai Client`.
 
 ## Overview
 
@@ -20,7 +20,7 @@ python YinYueTaiDownloader.py
 
 Modified from [https://github.com/firstg/yinyuetai](https://github.com/firstg/yinyuetai)
 
-1. Fixed problem of finding title from the html;
+1. Fixed problem with finding title of MV from the page content;
 2. Fixed problem with FLV path in OS X.
 
 ## License
