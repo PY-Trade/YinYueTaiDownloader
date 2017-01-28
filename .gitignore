@@ -3,6 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+.DS_Store
+Thumbs.db
+db.json
+*.log
+public/
+.deploy*/
+node_modules/
+
 # C extensions
 *.so
 
