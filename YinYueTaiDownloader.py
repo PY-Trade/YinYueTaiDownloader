@@ -16,7 +16,7 @@ def getpath():
 	path = os.path.abspath('.')
 	new_path = os.path.join(path,'FLV')
 	if not os.path.isdir(new_path):
-			os.mkdir(new_path)
+		os.mkdir(new_path)
 	return new_path
 
 def getvideoid():
@@ -40,13 +40,13 @@ def handlehtml(url):
 		#HC(432p) HD(540p) HE(720p)
 		#
 		if len(findlist) >= 3:
-				return findlist[2]
+			return findlist[2]
 		elif len(findlist) >= 2:
-				return findlist[1]
+			return findlist[1]
 		else:
-				return findlist[0]
+			return findlist[0]
 	except:
-			print 'Reading vodeolist failed!'
+		print 'Reading vodeolist failed!'
 
 
 def get_vodeoname(id):
@@ -68,10 +68,12 @@ def get_vodeoname(id):
 
 def download(videosrc, path, videoname):
 	name = videoname + '.flv'
-	path = path + '/' + name
+	path = path + '/' + name.replace('/','-')
 	print 'Videoname: ' + videoname
 	try:
 		urllib.urlretrieve(videosrc, path, Schedule)
+		print 'Download success!'
+		print 'File path: ' + path
 	except:
 		print 'Download failed!'	
 
@@ -82,9 +84,7 @@ def main():
 	url = gethtml(id)
 	videosrc = handlehtml(url)
 	download(videosrc, path, videoname)
-	print 'Download success!'
-	print 'File path: ' + path + '/' + videoname + '.flv'
 
 if __name__=='__main__':
-		main()
+	main()
 		
