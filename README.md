@@ -21,7 +21,8 @@ python YinYueTaiDownloader.py
 Modified from [https://github.com/firstg/yinyuetai](https://github.com/firstg/yinyuetai).
 
 1. Fixed problem with finding title of MV from the page content;
-2. Fixed problem with FLV path in OS X.
+2. Fixed problem with FLV path in OS X;
+3. Try to download high quality video first.
 
 I have only tested this script in `OS X`, so I'm not sure if there is any problem with Windows or Linux. You can make an `Issue` or a `Pull request` if you find a bug, thanks.
 
