@@ -7,10 +7,10 @@ import os,sys
 import re
 
 def Schedule(a, b, c):
-    per = 100.0 * a * b / c
-    if per > 100 : per = 100
-    sys.stdout.write(u"Download: %.1f%%\r" % per)
-    sys.stdout.flush()
+	per = 100.0 * a * b / c
+	if per > 100 : per = 100
+	sys.stdout.write(u"Download: %.1f%%\r" % per)
+	sys.stdout.flush()
 
 def getpath():
 	path = os.path.abspath('.')
@@ -26,7 +26,6 @@ def getvideoid():
 def gethtml(id):
 	url = 'http://www.yinyuetai.com/insite/get-video-info?flex=true&videoId=' + id
 	return url
-
 
 def handlehtml(url):
 	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
@@ -48,7 +47,6 @@ def handlehtml(url):
 	except:
 		print 'Reading vodeolist failed!'
 
-
 def get_vodeoname(id):
 	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 	try:
@@ -64,7 +62,6 @@ def get_vodeoname(id):
 		print "Can't find videoname!"
 		videoname = raw_input('Please input videoname: ')
 		return videoname
-
 
 def download(videosrc, path, videoname):
 	name = videoname + '.flv'
